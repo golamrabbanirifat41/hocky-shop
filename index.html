@@ -29,6 +29,8 @@
                 'price-color':'#FF4240;',
                 'primary-bg' : '#BCED6D1A',
                 'secondary-bg' : '#629CF31A',
+                'third-bg':'#13131805',
+                'secondary-text':'#FFFFFF99'
               }
             }
           }
@@ -45,9 +47,9 @@
 <body class="font-manrope">
     <header class="container mx-auto mb-14">
         <nav class="">
-            <div class="navbar bg-base-100 lg:flex lg:justify-between md:flex md:justify-between">
+            <div class="navbar bg-base-100 flex justify-between ">
                 <div class="">
-                  <div class="dropdown">
+                  <div class="dropdown lg:flex lg:justify-between md:flex md:justify-between">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
@@ -235,8 +237,8 @@
                   <div class="relative lg:col-span-2">
                     
                     <div class="card-body z-10 absolute text-white bottom-2 lg:bottom-1">
-                      <h2 class="card-title">Teenager Program</h2>
-                      <p class="lg:w-3/5">We have a program for teenagers under 18 years old.They can practice in the afternoon</p>
+                      <h2 class="card-title">Professional Program</h2>
+                      <p class="lg:w-3/5">We have a program for professionals age more than 18 years old.They can practice in the afternoon</p>
                       <div class="">
                         <button class="btn bg-button-color text-white border-none">Register Now</button>
                       </div>
@@ -519,7 +521,7 @@
 
 
         <!-- Get in touch section  -->
-        <section> 
+        <section class="mb-12"> 
             <div class=" text-center items-center mb-20">
                 <h2 class="text-4xl font-extrabold mb-10">Get In Touch</h2>
                 <p class="lg:w-3/5 mx-auto">You can contact with us anytime you want.We will try our best to help you.Below you can find our what's app,email number and location </p>
@@ -527,22 +529,22 @@
 
             <!-- what's app section  -->
             <div class="grid grid-cols-1 lg:grid-cols-[420px_auto] gap-6 items-start">
-                <div class=" p-12 space-y-6 mx-auto lg:m-0 rounded-xl">
+                <div class=" p-2 lg:p-12 space-y-6 mx-auto lg:m-0 rounded-xl">
 
                     <!-- what's app  -->
-                    <div class="w-[374px] h-[216px] rounded-2xl bg-primary-bg p-8">
+                    <div class="lg:w-[374px] h-[216px] rounded-2xl bg-primary-bg p-8">
                         <img src="Images/Group1171275317.png" alt="" class="mb-6">
                         <p>Phone Number : </p>
                         <h3 class="text-xl font-extrabold">(+62) 123-321-543</h3>
                     </div>
                     <!-- Email  -->
-                    <div class="w-[374px] h-[216px] rounded-2xl bg-primary-bg p-8">
+                    <div class="lg:w-[374px] h-[216px] rounded-2xl bg-primary-bg p-8">
                         <img src="Images/Group1171275318.png" alt="" class="mb-6">
                         <p>Email : </p>
                         <h3 class="text-xl font-extrabold">hockeys@support.com</h3>
                     </div>
                     <!-- Google maps  -->
-                    <div class="w-[374px] h-[216px] rounded-2xl bg-secondary-bg p-8">
+                    <div class="lg:w-[374px] h-[216px] rounded-2xl bg-secondary-bg p-8">
                         <img src="Images/Group1171275321.png" alt="" class="mb-6">
                         <p>Location: </p>
                         <h3 class="text-xl font-extrabold">152/1 Mohakhali Wireless Gate</h3>
@@ -568,11 +570,11 @@
                         <h3 class="text-xl font-extrabold">Phone Number</h3>
                         <input type="text" placeholder="Enter your phone number" class="input input-bordered  w-full max-w-xs" />
                     </div>
-                    <div class="space-y-4 col-span-2">
-                        <h3 class="text-xl font-extrabold">Your Name</h3>
-                        <input type="text" placeholder="Type here" class="input input-bordered  w-full h-[370px] content-start" />
+                    <div class="space-y-4 lg:col-span-2">
+                        <h3 class="text-xl font-extrabold">Message</h3>
+                        <input type="text" placeholder="Write your message" class="input input-bordered  w-full h-[370px] content-start" />
                     </div>
-                    <div class="col-span-2">
+                    <div class="lg:col-span-2">
                         <button class="btn bg-button-color text-white w-full "> Send Message</button>
                     </div>
                 </div>
@@ -580,10 +582,76 @@
 
 
         </section>
-    </main>
-    <footer>
 
-    </footer>
+        <!-- ----Social media section  -->
+        <section class="mb-24">
+            <div class=" text-center items-center mb-20 bg-third-bg py-9">
+                <h2 class="text-2xl font-bold mb-6">Social Media</h2>
+                <div class="flex justify-center gap-6 mx-auto">
+                    <i class="fa-brands fa-twitter text-2xl"></i>
+                    <i class="fa-brands fa-facebook text-2xl"></i>
+                    <i class="fa-brands fa-instagram text-2xl"></i>
+                    <i class="fa-brands fa-github text-2xl"></i>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footerh section -->
+    <footer class="footer p-10 bg-base-200 text-base-content bg-[#131318;] grid grid-cols-2 lg:grid-cols-5 ">
+        <div class="col-span-2 text-center lg:text-start mx-auto lg:m-0 ">
+            <aside class="text-white flex gap-3 flex-col">
+                <h2 class="text-2xl lg:text-3xl font-bold ">Get In Touch</h2>
+                <p class="text-secondary-text">You can connect with us through email or what's app</p>
+                <div class="mx-auto lg:m-0">
+                    <div class="flex gap-2 items-center">
+                        <i class="fa-solid fa-envelope text-red-600"></i>
+                    <p class="text-secondary-text">hockeys@support.com</p>
+                    </div>
+                    <div class="flex gap-2 itemsc">
+                        <i class="fa-solid fa-phone  text-red-600"></i>
+                    <p class="text-secondary-text">(+62) 123-321-543</p>
+                    </div>
+                </div>
+              </aside>
+        </div> 
+        
+        <div class="mx-auto">
+            <nav class="text-white flex gap-4 flex-col">
+                <h6 class=" text-xl font-bold">Company</h6> 
+                <a class="link link-hover text-secondary-text">About us</a>
+                <a class="link link-hover text-secondary-text">Leadership</a>
+                <a class="link link-hover text-secondary-text">Careers</a>
+                <a class="link link-hover text-secondary-text">News & Article</a>
+                <a class="link link-hover text-secondary-text">Legal Notice</a>
+                </nav> 
+        </div>
+         
+        <div class="mx-auto">
+            <nav class="text-white flex gap-4 flex-col">
+                <h6 class="text-xl font-bold">Support</h6> 
+                <a class="link link-hover text-secondary-text">Help Center</a>
+                <a class="link link-hover text-secondary-text">FAQ</a>
+                <a class="link link-hover text-secondary-text">Ticket Support</a>
+                <a class="link link-hover text-secondary-text">Contact Us </a>
+              </nav>
+        </div>
+
+        <div class="col-span-2 mx-auto">
+            <nav class="text-white flex gap-4 flex-col">
+                <h6 class="text-xl font-bold">Services</h6> 
+                <a class="link link-hover text-secondary-text">Academy</a>
+                <a class="link link-hover text-secondary-text">Group Lesson</a>
+                <a class="link link-hover text-secondary-text">Privaete Lesson</a>
+                <a class="link link-hover text-secondary-text">Hockyes for kids</a>
+                <a class="link link-hover text-secondary-text">Hockeys for Adults </a>
+              </nav> 
+        </div>
+        
+        
+      </footer>
 
 </body>
 </html>
